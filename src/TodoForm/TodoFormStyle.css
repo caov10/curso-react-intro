@@ -1,0 +1,86 @@
+/* Contenedor del formulario con efecto glassmorphism */
+.TodoForm {
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9));
+          backdrop-filter: blur(8px);
+          border-radius: 12px;
+          padding: 1.5rem 2rem;
+          max-width: 500px;
+          margin: 2rem auto;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Etiqueta descriptiva */
+.TodoForm label {
+          display: block;
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: #333;
+          margin-bottom: 0.5rem;
+}
+
+/* Área de texto */
+.TodoForm textarea {
+          width: calc(95%);
+          padding: 1rem;
+          font-size: 1rem;
+          color: #444;
+          border: 2px solid #ccc;
+          border-radius: 8px;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          resize: vertical;
+          min-height: 120px;
+}
+
+.TodoForm textarea:focus {
+          outline: none;
+          border-color: #007bff;
+          box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Contenedor de los botones centrado */
+.TodoForm-buttonContainer {
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+          margin-top: 1rem;
+}
+
+/* Estilo base para los botones, que se ajustan al contenido y tienen mayor anchura */
+.TodoForm-button {
+          flex: 0 0 auto;
+          /* Evita que los botones se expandan demasiado */
+          padding: 0.6rem 1.6rem;
+          /* Aumenta el padding horizontal para mayor anchura */
+          font-size: 1rem;
+          font-weight: bold;
+          cursor: pointer;
+          border: none;
+          border-radius: 8px;
+          transition: background 0.3s ease, transform 0.3s ease;
+          min-width: 120px;
+          /* Asegura un ancho mínimo */
+}
+
+/* Botón de cancelar con gradiente en tonos rojizos */
+.TodoForm-button--cancel {
+          background: linear-gradient(135deg, #ff8a80, #ff5252);
+          color: #fff;
+}
+
+.TodoForm-button--cancel:hover {
+          background: linear-gradient(135deg, #ff5252, #ff1744);
+          transform: translateY(-2px);
+}
+
+/* Botón de añadir con gradiente en tonos verdes */
+.TodoForm-button--add {
+          background: linear-gradient(135deg, #81c784, #66bb6a);
+          color: #fff;
+}
+
+.TodoForm-button--add:hover {
+          background: linear-gradient(135deg, #66bb6a, #43a047);
+          transform: translateY(-2px);
+}

@@ -1,0 +1,9 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px auto;
+  width: 300px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}

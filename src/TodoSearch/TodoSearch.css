@@ -1,0 +1,27 @@
+.container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 20px 0;
+}
+
+input {
+          width: 250px;
+          padding: 10px;
+          font-size: 16px;
+          border: 2px solid #3498db;
+          border-radius: 20px;
+          outline: none;
+          transition: all 0.3s ease-in-out;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+input::placeholder {
+          color: #95a5a6;
+          font-style: italic;
+}
+
+input:focus {
+          border-color: #2ecc71;
+          box-shadow: 0 0 10px #2ecc71;
+}
